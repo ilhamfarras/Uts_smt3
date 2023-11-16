@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main section{
+	margin:20px 10% 20px 10%;
+	display:grid;
+	grid-template:repeat(2,1fr)/repeat(3,1fr);
+	grid-column-gap:10px;
+	justify-items:center;
+}
+ main{
+	padding-top:120px;
+	display:flex;
+	flex-direction:column;
+    background-color: #164863;
+}
+main button {
+	text-align:center;
+	border-radius:5px;
+	border-color:#03A9F4;
+	cursor:pointer;
+	box-shadow:none;
+	width:auto;
+	align-self:center;
+	padding:5px 10px 5px 10px;
+	margin-bottom:20px;
+}
+main a,main a:hover,main a:active,main a:focus,main a:visited{
+	text-decoration:none;
+	color:#03A9F4;
+}
+main section div a:hover{
+	border-radius:10px;
+	box-shadow:
+		-5px 5px 20px,
+		5px -5px 20px,
+		5px 5px 20px,
+		-5px -5px 20px;
+}
+a, a:hover, a:active, a:focus, a:visited{
+	color:black;
+	text-decoration:none;
+}
+main section div a img{
+	border:solid;
+	border-color:#03A9F4;
+	border-width:2px;
+	border-radius:10px;
+	height:120px;
+	width:auto;
+	overflow:hidden;
+}
+footer{
+	background-color:#164863;
+	height:100vh;
+	display:flex;
+	flex-direction:row;		align-items:center;
+	justify-content:space-evenly;
+}
+footer div a{
+	background-color:black;
+	border-radius:50%;
+	height:150px;
+	width:150px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	white-space:pre-line;
+	overflow:hidden;
+}
+footer div a:hover{
+	border-radius:50%;
+	box-shadow:
+		-5px 5px 10px,
+		5px -5px 10px,
+		5px 5px 10px,
+		-5px -5px 10px;
+}
+footer div a img{
+	border-radius:50%;
+}
+footer div p{
+	text-align:center;
+}
+@media (max-width:800px){
+	nav{
+	background-color:#164863;
+	height:100px;
+	width:100%;
+	position:fixed;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:black;
+	z-index:1;
+}
+	main section{
+		margin:20px 10% 20px 10%;
+		display:grid;
+		grid-template:repeat(6,1fr)/1fr;
+		justify-items:center;
+	}
+	footer{
+		background-color:#A7FFEB;
+		height:100vh;
+		display:flex;
+		align-items:center;
+		justify-content:space-evenly;
+	}
+}
+p{
+    color: azure;
+}
+div{
+    color: azure;
+}
+    </style>
+</head>
+<body>
+    <main id="main">
+        ><center><h2 style="color: azure;">Berikut beberapa hal yang sudah pernah saya kerjakan</h2></center>
+        <section id="projects">
+            <div class="project-tile">
+            <a href="./sppsekolah/login.php" target="_blank"><img src="./pict/web.png"></a>
+                <div>Aplikasi Pembayaran spp</div>
+            </div>
+            <div class="project-tile">
+                <a href="https://www.figma.com/proto/mM877FdoM24cLca1Qq7RIv/Project-UAS?node-id=2-13&starting-point-node-id=2%3A13" target="_blank"><img src="./pict/figma.png"></a>
+                <div>Aplikasi Pembayaran spp</div>
+            </div>
+            <div class="project-tile">
+            <a href="file:///E:/Farras/webUTS/login.html" target="_blank"><img src="./pict/web2.png"></a>
+                <div>Web Tentang Pendidikan</div>
+            </div>
+            </section>
+    </main>
+    <footer id="footer">
+        <p>Berikut Sosial Media yang bisa anda Hubungi:</p>
+        <div>
+            <a id="profile-link" href="https://www.instagram.com/ilhm.fb_/" target="_blank"><img src="./pict/ig.png" width="150px"></a>
+            <p>Instagram profile</p>
+        </div>
+        <div>
+            <a href="https://twitter.com/ilhm_fb03" target="_blank"><img src="./pict/x.jpeg" width="150px"></a>
+            <p>My X</p>
+        </div>
+        <div>
+            <a href="https://www.tiktok.com/@goblok_premium" target="_blank"><img src="./pict/tiktok.png" width="220px"></a>
+            <p>Tik tok</p>
+        </div>
+        <div>
+            <a href="https://saweria.co/widgets/qr?streamKey=f29b84b125bb6f6ec007ae1d3ddea1f8" target="_blank"><img src="./pict/saweria.png" width="175px"></a>
+            <p>Saweria</p>
+        </div>
+        <tr>
+            <td>
+                <button type="button" class="btn btn-primary plus float-right" data-bs-toggle="modal" data-bs-target="navbar.html"><a href="navbar.html">Kembali</a></button>
+            </td>
+        </tr>
+    </footer>
+    <script type="text/javascript">
+        const projectName = 'portfolio';
+    localStorage.setItem('example_project', 'Personal Portfolio');
+    </script>
+</body>
+</html>
